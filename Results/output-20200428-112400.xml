@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200428 11:24:00.967" generator="Robot 3.1.2 (Python 2.7.17 on win32)">
+<suite source="H:\Logi\Robot_Pro\CATO" id="s1" name="CATO">
+<suite source="H:\Logi\Robot_Pro\CATO\Cato_feature.robot" id="s1-s1" name="Cato feature">
+<test id="s1-s1-t1" name="Create New Program">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200428 11:24:16.698" level="INFO">Opening browser 'chrome' to base url 'http://webtest.xerago.com/cvm'.</msg>
+<status status="PASS" endtime="20200428 11:24:34.219" starttime="20200428 11:24:16.696"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200428 11:24:35.391" starttime="20200428 11:24:34.225"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>//div[@class='login-footertxt']/p</arg>
+<arg>40s</arg>
+</arguments>
+<status status="PASS" endtime="20200428 11:24:35.556" starttime="20200428 11:24:35.395"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=form_username</arg>
+<arg>testpurpose</arg>
+</arguments>
+<msg timestamp="20200428 11:24:35.560" level="INFO">Typing text 'testpurpose' into text field 'id=form_username'.</msg>
+<status status="PASS" endtime="20200428 11:24:36.188" starttime="20200428 11:24:35.558"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=form_password</arg>
+<arg>testpurpose</arg>
+</arguments>
+<msg timestamp="20200428 11:24:36.193" level="INFO">Typing text 'testpurpose' into text field 'id=form_password'.</msg>
+<status status="PASS" endtime="20200428 11:24:36.700" starttime="20200428 11:24:36.190"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id=form_login</arg>
+</arguments>
+<msg timestamp="20200428 11:24:36.705" level="INFO">Clicking button 'id=form_login'.</msg>
+<status status="PASS" endtime="20200428 11:24:36.981" starttime="20200428 11:24:36.702"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>20s</arg>
+</arguments>
+<msg timestamp="20200428 11:24:56.987" level="INFO">Slept 20 seconds</msg>
+<status status="PASS" endtime="20200428 11:24:56.988" starttime="20200428 11:24:36.983"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>xpath=.//li[@ng-click='createNewProgram()']</arg>
+<arg>60s</arg>
+</arguments>
+<status status="PASS" endtime="20200428 11:25:22.331" starttime="20200428 11:24:56.989"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//li[@ng-click='createNewProgram()']</arg>
+</arguments>
+<msg timestamp="20200428 11:25:22.334" level="INFO">Clicking element 'xpath=.//li[@ng-click='createNewProgram()']'.</msg>
+<status status="PASS" endtime="20200428 11:25:22.821" starttime="20200428 11:25:22.333"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>20s</arg>
+</arguments>
+<msg timestamp="20200428 11:25:42.826" level="INFO">Slept 20 seconds</msg>
+<status status="PASS" endtime="20200428 11:25:42.827" starttime="20200428 11:25:22.823"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>xpath=.//div[@id='productName'][contains(.,'Savings Account')]</arg>
+<arg>40s</arg>
+</arguments>
+<status status="PASS" endtime="20200428 11:25:42.918" starttime="20200428 11:25:42.829"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//div[@id='productName'][contains(.,'Savings Account')]</arg>
+</arguments>
+<msg timestamp="20200428 11:25:42.920" level="INFO">Clicking element 'xpath=.//div[@id='productName'][contains(.,'Savings Account')]'.</msg>
+<status status="PASS" endtime="20200428 11:25:43.106" starttime="20200428 11:25:42.919"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>20s</arg>
+</arguments>
+<msg timestamp="20200428 11:26:03.112" level="INFO">Slept 20 seconds</msg>
+<status status="PASS" endtime="20200428 11:26:03.113" starttime="20200428 11:25:43.108"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//div[@class='objectivelist']/div[contains(.,'Cross-sell')]</arg>
+</arguments>
+<msg timestamp="20200428 11:26:03.116" level="INFO">Clicking element 'xpath=.//div[@class='objectivelist']/div[contains(.,'Cross-sell')]'.</msg>
+<status status="PASS" endtime="20200428 11:26:03.324" starttime="20200428 11:26:03.114"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>xpath=.//div[@class='approach-head']/div[contains(.,'Volatile account balances')]</arg>
+<arg>40s</arg>
+</arguments>
+<status status="PASS" endtime="20200428 11:26:03.711" starttime="20200428 11:26:03.326"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//div[@class='approach-head']/div[contains(.,'Volatile account balances')]</arg>
+</arguments>
+<msg timestamp="20200428 11:26:03.714" level="INFO">Clicking element 'xpath=.//div[@class='approach-head']/div[contains(.,'Volatile account balances')]'.</msg>
+<status status="PASS" endtime="20200428 11:26:03.870" starttime="20200428 11:26:03.713"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//div[@id='fromDate']//div/a[2]</arg>
+</arguments>
+<msg timestamp="20200428 11:26:03.874" level="INFO">Clicking element 'xpath=.//div[@id='fromDate']//div/a[2]'.</msg>
+<status status="PASS" endtime="20200428 11:26:04.091" starttime="20200428 11:26:03.872"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//div[@id='fromDate']//div/a[2]</arg>
+</arguments>
+<msg timestamp="20200428 11:26:04.097" level="INFO">Clicking element 'xpath=.//div[@id='fromDate']//div/a[2]'.</msg>
+<status status="PASS" endtime="20200428 11:26:04.280" starttime="20200428 11:26:04.093"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//div[@id='fromDate']//div/a[2]</arg>
+</arguments>
+<msg timestamp="20200428 11:26:04.284" level="INFO">Clicking element 'xpath=.//div[@id='fromDate']//div/a[2]'.</msg>
+<status status="PASS" endtime="20200428 11:26:04.470" starttime="20200428 11:26:04.283"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//div[@id='fromDate']//div/a[2]</arg>
+</arguments>
+<msg timestamp="20200428 11:26:04.473" level="INFO">Clicking element 'xpath=.//div[@id='fromDate']//div/a[2]'.</msg>
+<status status="PASS" endtime="20200428 11:26:04.651" starttime="20200428 11:26:04.472"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//div[@id='fromDate']//div/a[2]</arg>
+</arguments>
+<msg timestamp="20200428 11:26:04.656" level="INFO">Clicking element 'xpath=.//div[@id='fromDate']//div/a[2]'.</msg>
+<status status="PASS" endtime="20200428 11:26:04.832" starttime="20200428 11:26:04.653"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(.//table[@class='ui-datepicker-calendar']/tbody/tr/td[contains(.,'3')])[1]</arg>
+</arguments>
+<msg timestamp="20200428 11:26:04.835" level="INFO">Clicking element 'xpath=(.//table[@class='ui-datepicker-calendar']/tbody/tr/td[contains(.,'3')])[1]'.</msg>
+<status status="PASS" endtime="20200428 11:26:05.196" starttime="20200428 11:26:04.834"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//input[@name='saveChanges']</arg>
+</arguments>
+<msg timestamp="20200428 11:26:05.201" level="INFO">Clicking element 'xpath=.//input[@name='saveChanges']'.</msg>
+<status status="PASS" endtime="20200428 11:26:05.434" starttime="20200428 11:26:05.198"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>15s</arg>
+</arguments>
+<msg timestamp="20200428 11:26:20.438" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" endtime="20200428 11:26:20.439" starttime="20200428 11:26:05.436"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//a[@title='Check Count']</arg>
+</arguments>
+<msg timestamp="20200428 11:26:20.441" level="INFO">Clicking element 'xpath=.//a[@title='Check Count']'.</msg>
+<status status="PASS" endtime="20200428 11:26:20.761" starttime="20200428 11:26:20.440"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>15s</arg>
+</arguments>
+<msg timestamp="20200428 11:26:35.767" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" endtime="20200428 11:26:35.768" starttime="20200428 11:26:20.764"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//div[@ng-repeat='collection in productPercentage'][2]</arg>
+</arguments>
+<msg timestamp="20200428 11:26:35.772" level="INFO">Clicking element 'xpath=.//div[@ng-repeat='collection in productPercentage'][2]'.</msg>
+<status status="PASS" endtime="20200428 11:26:36.074" starttime="20200428 11:26:35.770"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>15s</arg>
+</arguments>
+<msg timestamp="20200428 11:26:51.077" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" endtime="20200428 11:26:51.078" starttime="20200428 11:26:36.076"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//a[@title='Save and Proceed']</arg>
+</arguments>
+<msg timestamp="20200428 11:26:51.081" level="INFO">Clicking element 'xpath=.//a[@title='Save and Proceed']'.</msg>
+<status status="PASS" endtime="20200428 11:26:51.253" starttime="20200428 11:26:51.080"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>15s</arg>
+</arguments>
+<msg timestamp="20200428 11:27:06.256" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" endtime="20200428 11:27:06.257" starttime="20200428 11:26:51.254"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(.//div[@class='btn-group fg col-sm-8']/label)[1]</arg>
+</arguments>
+<msg timestamp="20200428 11:27:06.259" level="INFO">Clicking element 'xpath=(.//div[@class='btn-group fg col-sm-8']/label)[1]'.</msg>
+<status status="PASS" endtime="20200428 11:27:06.481" starttime="20200428 11:27:06.258"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>15s</arg>
+</arguments>
+<msg timestamp="20200428 11:27:21.486" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" endtime="20200428 11:27:21.487" starttime="20200428 11:27:06.483"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//table[@class='ds-table']/tbody/tr/td[15]/div</arg>
+</arguments>
+<msg timestamp="20200428 11:27:21.490" level="INFO">Clicking element 'xpath=.//table[@class='ds-table']/tbody/tr/td[15]/div'.</msg>
+<status status="PASS" endtime="20200428 11:27:21.716" starttime="20200428 11:27:21.488"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>15s</arg>
+</arguments>
+<msg timestamp="20200428 11:27:36.720" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" endtime="20200428 11:27:36.721" starttime="20200428 11:27:21.718"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(.//table[@class='ds-table']/tbody/tr/td[15]/div/following-sibling::ul/li/label)[1]</arg>
+</arguments>
+<msg timestamp="20200428 11:27:36.723" level="INFO">Clicking element 'xpath=(.//table[@class='ds-table']/tbody/tr/td[15]/div/following-sibling::ul/li/label)[1]'.</msg>
+<status status="PASS" endtime="20200428 11:27:37.085" starttime="20200428 11:27:36.722"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(.//table[@class='ds-table']/tbody/tr/td[15]/div/following-sibling::ul/li/label)[3]</arg>
+</arguments>
+<msg timestamp="20200428 11:27:37.089" level="INFO">Clicking element 'xpath=(.//table[@class='ds-table']/tbody/tr/td[15]/div/following-sibling::ul/li/label)[3]'.</msg>
+<status status="PASS" endtime="20200428 11:27:37.276" starttime="20200428 11:27:37.088"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>15s</arg>
+</arguments>
+<msg timestamp="20200428 11:27:52.280" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" endtime="20200428 11:27:52.281" starttime="20200428 11:27:37.278"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//button[@title='Next']</arg>
+</arguments>
+<msg timestamp="20200428 11:27:52.283" level="INFO">Clicking button 'xpath=.//button[@title='Next']'.</msg>
+<status status="PASS" endtime="20200428 11:27:52.621" starttime="20200428 11:27:52.282"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>15s</arg>
+</arguments>
+<msg timestamp="20200428 11:28:07.624" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" endtime="20200428 11:28:07.629" starttime="20200428 11:27:52.622"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
+</arguments>
+<msg timestamp="20200428 11:28:07.637" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight)
+Without any arguments.</msg>
+<status status="PASS" endtime="20200428 11:28:07.670" starttime="20200428 11:28:07.631"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>20s</arg>
+</arguments>
+<msg timestamp="20200428 11:28:27.674" level="INFO">Slept 20 seconds</msg>
+<status status="PASS" endtime="20200428 11:28:27.675" starttime="20200428 11:28:07.672"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//input[@title='Save &amp; Proceed']</arg>
+</arguments>
+<msg timestamp="20200428 11:28:27.678" level="INFO">Clicking element 'xpath=.//input[@title='Save &amp; Proceed']'.</msg>
+<status status="PASS" endtime="20200428 11:28:28.184" starttime="20200428 11:28:27.676"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>25s</arg>
+</arguments>
+<msg timestamp="20200428 11:28:53.188" level="INFO">Slept 25 seconds</msg>
+<status status="PASS" endtime="20200428 11:28:53.189" starttime="20200428 11:28:28.186"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//p[@class='sdnptop pfontsize ng-binding']</arg>
+</arguments>
+<msg timestamp="20200428 11:28:53.193" level="INFO">Clicking element 'xpath=.//p[@class='sdnptop pfontsize ng-binding']'.</msg>
+<status status="PASS" endtime="20200428 11:28:53.438" starttime="20200428 11:28:53.192"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>20s</arg>
+</arguments>
+<msg timestamp="20200428 11:29:13.454" level="INFO">Slept 20 seconds</msg>
+<status status="PASS" endtime="20200428 11:29:13.455" starttime="20200428 11:28:53.440"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//div[@class='col-sm-12 sdnmaincontainerforsavedtemplate']/div/div[@class='col-sm-4 ng-scope'][1]</arg>
+</arguments>
+<msg timestamp="20200428 11:29:13.460" level="INFO">Clicking element 'xpath=.//div[@class='col-sm-12 sdnmaincontainerforsavedtemplate']/div/div[@class='col-sm-4 ng-scope'][1]'.</msg>
+<status status="PASS" endtime="20200428 11:29:13.849" starttime="20200428 11:29:13.458"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>20s</arg>
+</arguments>
+<msg timestamp="20200428 11:29:33.853" level="INFO">Slept 20 seconds</msg>
+<status status="PASS" endtime="20200428 11:29:33.854" starttime="20200428 11:29:13.851"></status>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<arguments>
+<arg>xpath=.//div[@class='templatepopcombo']/div[@class='Emailer']</arg>
+</arguments>
+<msg timestamp="20200428 11:29:33.856" level="INFO">Simulating Mouse Over on element 'xpath=.//div[@class='templatepopcombo']/div[@class='Emailer']'.</msg>
+<status status="PASS" endtime="20200428 11:29:34.191" starttime="20200428 11:29:33.855"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20200428 11:29:44.195" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20200428 11:29:44.196" starttime="20200428 11:29:34.193"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//div[@class='templatepopcombo']/div[@class='Emailer']</arg>
+</arguments>
+<msg timestamp="20200428 11:29:44.199" level="INFO">Clicking element 'xpath=.//div[@class='templatepopcombo']/div[@class='Emailer']'.</msg>
+<status status="PASS" endtime="20200428 11:29:44.555" starttime="20200428 11:29:44.197"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>20s</arg>
+</arguments>
+<msg timestamp="20200428 11:30:04.559" level="INFO">Slept 20 seconds</msg>
+<status status="PASS" endtime="20200428 11:30:04.561" starttime="20200428 11:29:44.557"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>xpath=.//button[@ng-click='channelselectfornext()']</arg>
+<arg>50s</arg>
+</arguments>
+<status status="PASS" endtime="20200428 11:30:09.637" starttime="20200428 11:30:04.565"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20200428 11:30:19.642" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20200428 11:30:19.643" starttime="20200428 11:30:09.638"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
+</arguments>
+<msg timestamp="20200428 11:30:19.651" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight)
+Without any arguments.</msg>
+<status status="PASS" endtime="20200428 11:30:19.719" starttime="20200428 11:30:19.645"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//button[@ng-click='channelselectfornext()']</arg>
+</arguments>
+<msg timestamp="20200428 11:30:19.723" level="INFO">Clicking element 'xpath=.//button[@ng-click='channelselectfornext()']'.</msg>
+<status status="PASS" endtime="20200428 11:30:20.735" starttime="20200428 11:30:19.721"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>15s</arg>
+</arguments>
+<msg timestamp="20200428 11:30:35.740" level="INFO">Slept 15 seconds</msg>
+<status status="PASS" endtime="20200428 11:30:35.742" starttime="20200428 11:30:20.737"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>xpath=.//button[@title='Save and Continue']</arg>
+<arg>30s</arg>
+</arguments>
+<status status="PASS" endtime="20200428 11:30:35.843" starttime="20200428 11:30:35.744"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//button[@title='Save and Continue']</arg>
+</arguments>
+<msg timestamp="20200428 11:30:35.846" level="INFO">Clicking element 'xpath=.//button[@title='Save and Continue']'.</msg>
+<status status="PASS" endtime="20200428 11:30:36.040" starttime="20200428 11:30:35.844"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>xpath=.//p[@class='paddingSummary updatedsummary']</arg>
+<arg>40s</arg>
+</arguments>
+<status status="PASS" endtime="20200428 11:30:54.570" starttime="20200428 11:30:36.042"></status>
+</kw>
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<arguments>
+<arg>window.scrollTo(0, document.body.scrollHeight)</arg>
+</arguments>
+<msg timestamp="20200428 11:30:54.579" level="INFO">Executing JavaScript:
+window.scrollTo(0, document.body.scrollHeight)
+Without any arguments.</msg>
+<status status="PASS" endtime="20200428 11:30:54.636" starttime="20200428 11:30:54.572"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//button[@ng-click='approval()']</arg>
+</arguments>
+<msg timestamp="20200428 11:30:54.643" level="INFO">Clicking element 'xpath=.//button[@ng-click='approval()']'.</msg>
+<status status="PASS" endtime="20200428 11:30:55.128" starttime="20200428 11:30:54.640"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20200428 11:31:00.227" starttime="20200428 11:30:55.130"></status>
+</kw>
+<status status="PASS" endtime="20200428 11:31:00.229" critical="yes" starttime="20200428 11:24:16.692"></status>
+</test>
+<test id="s1-s1-t2" name="Approve program in reviewer dashboard">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200428 11:31:00.240" level="INFO">Opening browser 'chrome' to base url 'http://webtest.xerago.com/cvm'.</msg>
+<status status="PASS" endtime="20200428 11:31:19.619" starttime="20200428 11:31:00.237"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200428 11:31:20.859" starttime="20200428 11:31:19.621"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>//div[@class='login-footertxt']/p</arg>
+</arguments>
+<status status="PASS" endtime="20200428 11:31:20.996" starttime="20200428 11:31:20.861"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=form_username</arg>
+<arg>reviewers</arg>
+</arguments>
+<msg timestamp="20200428 11:31:21.001" level="INFO">Typing text 'reviewers' into text field 'id=form_username'.</msg>
+<status status="PASS" endtime="20200428 11:31:21.535" starttime="20200428 11:31:20.998"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=form_password</arg>
+<arg>reviewers@123</arg>
+</arguments>
+<msg timestamp="20200428 11:31:21.540" level="INFO">Typing text 'reviewers@123' into text field 'id=form_password'.</msg>
+<status status="PASS" endtime="20200428 11:31:22.112" starttime="20200428 11:31:21.538"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id=form_login</arg>
+</arguments>
+<msg timestamp="20200428 11:31:22.115" level="INFO">Clicking button 'id=form_login'.</msg>
+<status status="PASS" endtime="20200428 11:31:22.495" starttime="20200428 11:31:22.113"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>20s</arg>
+</arguments>
+<msg timestamp="20200428 11:31:42.499" level="INFO">Slept 20 seconds</msg>
+<status status="PASS" endtime="20200428 11:31:42.500" starttime="20200428 11:31:22.497"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=(.//*[contains(@class,'cname') and contains(text(),'Program for Cross-sell Savings Accounts Volatile account balances')]/parent::*/parent::*/parent::*//*[@ng-click='conApproveCamp(x)'])[1]</arg>
+</arguments>
+<msg timestamp="20200428 11:31:42.503" level="INFO">Clicking element 'xpath=(.//*[contains(@class,'cname') and contains(text(),'Program for Cross-sell Savings Accounts Volatile account balances')]/parent::*/parent::*/parent::*//*[@ng-click='conApproveCamp(x)'])[1]'.</msg>
+<kw name="Capture Page Screenshot">
+<msg timestamp="20200428 11:31:42.553" level="FAIL">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    Selenium2Library.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+<status status="FAIL" endtime="20200428 11:31:42.553" starttime="20200428 11:31:42.552"></status>
+</kw>
+<msg timestamp="20200428 11:31:42.554" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    Selenium2Library.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+<msg timestamp="20200428 11:31:42.562" level="FAIL">Element with locator 'xpath=(.//*[contains(@class,'cname') and contains(text(),'Program for Cross-sell Savings Accounts Volatile account balances')]/parent::*/parent::*/parent::*//*[@ng-click='conApproveCamp(x)'])[1]' not found.</msg>
+<status status="FAIL" endtime="20200428 11:31:42.563" starttime="20200428 11:31:42.501"></status>
+</kw>
+<status status="FAIL" endtime="20200428 11:31:42.566" critical="yes" starttime="20200428 11:31:00.232">Element with locator 'xpath=(.//*[contains(@class,'cname') and contains(text(),'Program for Cross-sell Savings Accounts Volatile account balances')]/parent::*/parent::*/parent::*//*[@ng-click='conApproveCamp(x)'])[1]' not found.</status>
+</test>
+<test id="s1-s1-t3" name="Check reviewer approve status in creator dashboard">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200428 11:31:42.577" level="INFO">Opening browser 'chrome' to base url 'http://webtest.xerago.com/cvm'.</msg>
+<status status="PASS" endtime="20200428 11:32:22.387" starttime="20200428 11:31:42.574"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200428 11:32:23.573" starttime="20200428 11:32:22.390"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>//div[@class='login-footertxt']/p</arg>
+</arguments>
+<status status="PASS" endtime="20200428 11:32:23.685" starttime="20200428 11:32:23.575"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=form_username</arg>
+<arg>testpurpose</arg>
+</arguments>
+<msg timestamp="20200428 11:32:23.688" level="INFO">Typing text 'testpurpose' into text field 'id=form_username'.</msg>
+<status status="PASS" endtime="20200428 11:32:24.076" starttime="20200428 11:32:23.686"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=form_password</arg>
+<arg>testpurpose</arg>
+</arguments>
+<msg timestamp="20200428 11:32:24.079" level="INFO">Typing text 'testpurpose' into text field 'id=form_password'.</msg>
+<status status="PASS" endtime="20200428 11:32:24.506" starttime="20200428 11:32:24.078"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>id=form_login</arg>
+</arguments>
+<msg timestamp="20200428 11:32:24.509" level="INFO">Clicking button 'id=form_login'.</msg>
+<status status="PASS" endtime="20200428 11:32:24.754" starttime="20200428 11:32:24.508"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>20s</arg>
+</arguments>
+<msg timestamp="20200428 11:32:44.756" level="INFO">Slept 20 seconds</msg>
+<status status="PASS" endtime="20200428 11:32:44.757" starttime="20200428 11:32:24.755"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=.//a[@ng-click='goCampaign()']</arg>
+</arguments>
+<msg timestamp="20200428 11:32:44.759" level="INFO">Clicking element 'xpath=.//a[@ng-click='goCampaign()']'.</msg>
+<kw name="Capture Page Screenshot">
+<msg timestamp="20200428 11:32:44.803" level="FAIL">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    Selenium2Library.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+<status status="FAIL" endtime="20200428 11:32:44.803" starttime="20200428 11:32:44.802"></status>
+</kw>
+<msg timestamp="20200428 11:32:44.804" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    Selenium2Library.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+<msg timestamp="20200428 11:32:44.807" level="FAIL">Element with locator 'xpath=.//a[@ng-click='goCampaign()']' not found.</msg>
+<status status="FAIL" endtime="20200428 11:32:44.808" starttime="20200428 11:32:44.758"></status>
+</kw>
+<status status="FAIL" endtime="20200428 11:32:44.809" critical="yes" starttime="20200428 11:31:42.569">Element with locator 'xpath=.//a[@ng-click='goCampaign()']' not found.</status>
+</test>
+<test id="s1-s1-t4" name="Aboort program">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200428 11:32:44.815" level="INFO">Opening browser 'chrome' to base url 'http://webtest.xerago.com/cvm'.</msg>
+<status status="PASS" endtime="20200428 11:33:02.833" starttime="20200428 11:32:44.814"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<kw name="Capture Page Screenshot">
+<msg timestamp="20200428 11:33:08.863" level="FAIL">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    Selenium2Library.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+<status status="FAIL" endtime="20200428 11:33:08.864" starttime="20200428 11:33:08.862"></status>
+</kw>
+<msg timestamp="20200428 11:33:08.865" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    Selenium2Library.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+<msg timestamp="20200428 11:33:08.873" level="FAIL">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=81.0.4044.122)
+</msg>
+<status status="FAIL" endtime="20200428 11:33:08.875" starttime="20200428 11:33:02.836"></status>
+</kw>
+<status status="FAIL" endtime="20200428 11:33:08.879" critical="yes" starttime="20200428 11:32:44.811">WebDriverException: Message: chrome not reachable
+  (Session info: chrome=81.0.4044.122)
+</status>
+</test>
+<test id="s1-s1-t5" name="Check reviewer abort status in creator dashboard">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+</arguments>
+<msg timestamp="20200428 11:33:08.894" level="INFO">Opening browser 'chrome' to base url 'http://webtest.xerago.com/cvm'.</msg>
+<kw name="Capture Page Screenshot">
+<msg timestamp="20200428 11:33:14.423" level="FAIL">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    Selenium2Library.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+<status status="FAIL" endtime="20200428 11:33:14.424" starttime="20200428 11:33:14.422"></status>
+</kw>
+<msg timestamp="20200428 11:33:14.425" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    Selenium2Library.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+<msg timestamp="20200428 11:33:14.447" level="FAIL">WebDriverException: Message: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=81.0.4044.122)
+</msg>
+<status status="FAIL" endtime="20200428 11:33:14.451" starttime="20200428 11:33:08.889"></status>
+</kw>
+<status status="FAIL" endtime="20200428 11:33:14.453" critical="yes" starttime="20200428 11:33:08.883">WebDriverException: Message: unknown error: cannot determine loading status
+from disconnected: received Inspector.detached event
+  (Session info: chrome=81.0.4044.122)
+</status>
+</test>
+<status status="FAIL" endtime="20200428 11:33:14.469" starttime="20200428 11:24:14.295"></status>
+</suite>
+<status status="FAIL" endtime="20200428 11:33:14.530" starttime="20200428 11:24:01.524"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="4" pass="1">Critical Tests</stat>
+<stat fail="4" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="4" id="s1" name="CATO" pass="1">CATO</stat>
+<stat fail="4" id="s1-s1" name="Cato feature" pass="1">CATO.Cato feature</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200428 11:24:14.296" level="ERROR">Error in test case file 'H:\Logi\Robot_Pro\CATO\Cato_feature.robot': Creating keyword 'Scroll Page To Location' failed: Invalid argument specification: Invalid argument syntax '9* ${x_location}'.</msg>
+<msg timestamp="20200428 11:31:42.554" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    Selenium2Library.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+<msg timestamp="20200428 11:32:44.804" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    Selenium2Library.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+<msg timestamp="20200428 11:33:08.865" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    Selenium2Library.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+<msg timestamp="20200428 11:33:14.425" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    Selenium2Library.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+</errors>
+</robot>

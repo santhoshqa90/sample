@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20200428 13:51:28.598" generator="Robot 3.1.2 (Python 2.7.17 on win32)">
+<suite source="H:\Logi\Robot_Pro\Test_CVM\Test_Suit_Cato.robot" id="s1" name="Test Suit Cato">
+<test id="s1-t1" name="TestCase_1">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200428 13:52:47.031" level="INFO">Opening browser 'chrome' to base url 'http://cvm.xerago.net/'.</msg>
+<status status="PASS" endtime="20200428 13:54:16.068" starttime="20200428 13:52:47.030"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200428 13:54:17.391" starttime="20200428 13:54:16.070"></status>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<arguments>
+<arg>//div[@class='login-footertxt']/p</arg>
+</arguments>
+<status status="PASS" endtime="20200428 13:54:17.563" starttime="20200428 13:54:17.393"></status>
+</kw>
+<kw name="Element Text Should Be">
+<arguments>
+<arg>//label[@class='loginLabel']</arg>
+<arg>Username</arg>
+</arguments>
+<msg timestamp="20200428 13:54:17.565" level="FAIL">Multiple keywords with name 'Element Text Should Be' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Element Text Should Be
+    SeleniumLibrary.Element Text Should Be</msg>
+<status status="FAIL" endtime="20200428 13:54:17.565" starttime="20200428 13:54:17.564"></status>
+</kw>
+<status status="FAIL" endtime="20200428 13:54:17.566" critical="yes" starttime="20200428 13:52:47.027">Multiple keywords with name 'Element Text Should Be' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Element Text Should Be
+    SeleniumLibrary.Element Text Should Be</status>
+</test>
+<test id="s1-t2" name="TestCase_3">
+<kw name="Start Sikuli Process" library="SikuliLibrary">
+<msg timestamp="20200428 13:54:17.586" level="INFO">Starting process:
+java -jar c:\python27\lib\site-packages\SikuliLibrary\lib\SikuliLibrary.jar 52717 H:\Logi\Robot_Pro\Test_CVM\Results</msg>
+<msg timestamp="20200428 13:54:17.695" level="INFO">Start sikuli java process on port 52717</msg>
+<msg timestamp="20200428 13:54:21.696" level="INFO">Gracefully terminating process.</msg>
+<msg timestamp="20200428 13:54:21.831" level="INFO">Process completed.</msg>
+<msg timestamp="20200428 13:54:21.836" level="INFO">Starting process:
+java -jar c:\python27\lib\site-packages\SikuliLibrary\lib\SikuliLibrary.jar 52725 H:\Logi\Robot_Pro\Test_CVM\Results</msg>
+<msg timestamp="20200428 13:54:21.839" level="INFO">Start sikuli java process on port 52725</msg>
+<msg timestamp="20200428 13:54:25.851" level="INFO">Gracefully terminating process.</msg>
+<msg timestamp="20200428 13:54:55.912" level="INFO">Graceful termination failed.</msg>
+<msg timestamp="20200428 13:54:55.912" level="INFO">Forcefully killing process.</msg>
+<msg timestamp="20200428 13:54:56.013" level="INFO">Process completed.</msg>
+<msg timestamp="20200428 13:54:56.044" level="INFO">Starting process:
+java -jar c:\python27\lib\site-packages\SikuliLibrary\lib\SikuliLibrary.jar 52750 H:\Logi\Robot_Pro\Test_CVM\Results</msg>
+<msg timestamp="20200428 13:54:56.048" level="INFO">Start sikuli java process on port 52750</msg>
+<msg timestamp="20200428 13:55:00.006" level="INFO">Sikuli java process is started</msg>
+<msg timestamp="20200428 13:55:17.278" level="INFO">error........Start sikuli java process failed!
+error........Start sikuli java process failed!</msg>
+<status status="PASS" endtime="20200428 13:55:17.278" starttime="20200428 13:54:17.572"></status>
+</kw>
+<kw name="Add Image Path" library="SikuliLibrary">
+<doc>Add image path</doc>
+<arguments>
+<arg>H:/sikuli_images</arg>
+</arguments>
+<msg timestamp="20200428 13:55:17.380" level="INFO">Params: [H:/sikuli_images]</msg>
+<status status="PASS" endtime="20200428 13:55:17.380" starttime="20200428 13:55:17.279"></status>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<doc>Click</doc>
+<arguments>
+<arg>window_icon.png</arg>
+</arguments>
+<msg timestamp="20200428 13:55:30.445" level="INFO">Params: [window_icon.png]</msg>
+<msg timestamp="20200428 13:55:30.445" html="yes" level="INFO">&lt;img src='sikuli_captured/sikuliximage-1588062329811.png'/&gt;</msg>
+<msg timestamp="20200428 13:55:30.446" level="FAIL">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(window_icon.png) S: 0.699999988079071</msg>
+<status status="FAIL" endtime="20200428 13:55:30.447" starttime="20200428 13:55:17.381"></status>
+</kw>
+<status status="FAIL" endtime="20200428 13:55:30.448" critical="yes" starttime="20200428 13:54:17.569">com.github.rainmanwy.robotframework.sikulilib.exceptions.TimeoutException: Timeout happend, could not find P(window_icon.png) S: 0.699999988079071</status>
+</test>
+<test id="s1-t3" name="Compare files">
+<kw name="Diff Files" library="DiffLibrary">
+<doc>Diff two text files</doc>
+<arguments>
+<arg>I:/test1.txt</arg>
+<arg>I:/test2.txt</arg>
+</arguments>
+<msg timestamp="20200428 13:55:30.455" level="INFO">file1: I:/test1.txt</msg>
+<msg timestamp="20200428 13:55:30.455" level="INFO">file2: I:/test2.txt</msg>
+<msg timestamp="20200428 13:55:30.480" level="INFO">c:\python27\lib\site-packages\DiffLibrary\bin\diff\diff.exe --strip-trailing-cr  "I:/test1.txt" "I:/test2.txt"</msg>
+<msg timestamp="20200428 13:55:32.459" level="INFO">1c1
+&lt; test try 1123 lorem ipsum test try 1123 lorem ipsumtest try 1123 lorem ipsumtest try 1123 lorem ipsumtest try 1123 lorem ipsumtest try 1123 lorem ipsumtest try 1123 lorem ipsumtest try 1123 lorem ipsumtest try 1123 lorem ipsumtest try 1123 lorem ipsumtest try 1123 lorem ipsumtest try 1123 lorem ipsumtest try 1123 lorem ipsumtest try 1123 lorem ipsumtest try 1123 lorem ipsum
+\ No newline at end of file
+---
+&gt; test try 1123 lorem ipsum test try 1123 lorem ipsumtest try 1123 lorem ipsumtest try 1123 lorem ipsumtest try 1123 lorem ipsumtest try 1123 lorem ipsumtest try 1123 lorem ipsumtest try 1123 lorem ipsumtest try 123 lorem ipsumtest try 1123 lorem ipsumtest try 1123 lorem ipsumtest try 1123 lorem ipsumtest try 1123 lorem ipsumtest try 1123 lorem ipsumtest try 1123 lorem ipsum
+\ No newline at end of file</msg>
+<msg timestamp="20200428 13:55:32.841" level="FAIL">differences found between I:/test1.txt and I:/test2.txt</msg>
+<status status="FAIL" endtime="20200428 13:55:32.842" starttime="20200428 13:55:30.453"></status>
+</kw>
+<status status="FAIL" endtime="20200428 13:55:32.843" critical="yes" starttime="20200428 13:55:30.450">differences found between I:/test1.txt and I:/test2.txt</status>
+</test>
+<test id="s1-t4" name="Mobile Testing">
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>http://localhost:4755/wd/hub</arg>
+<arg>platformName=iOS</arg>
+<arg>platformVersion=7.0</arg>
+<arg>deviceName='iPhone Simulator'</arg>
+<arg>browserName=Chrome</arg>
+</arguments>
+<msg timestamp="20200428 13:55:34.857" level="INFO">Could not connect to port 4755 on host localhost</msg>
+<msg timestamp="20200428 13:55:34.858" level="INFO">Could not get IP address for host: localhost</msg>
+<msg timestamp="20200428 13:55:36.873" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000000000308EDC8&gt;: Failed to establish a new connection: [Errno 10061] No connection could be made because the target machine actively refused it',)': /wd/hub/session</msg>
+<msg timestamp="20200428 13:55:38.875" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000000001B66788&gt;: Failed to establish a new connection: [Errno 10061] No connection could be made because the target machine actively refused it',)': /wd/hub/session</msg>
+<msg timestamp="20200428 13:55:40.883" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000000000308E588&gt;: Failed to establish a new connection: [Errno 10061] No connection could be made because the target machine actively refused it',)': /wd/hub/session</msg>
+<kw name="Capture Page Screenshot">
+<msg timestamp="20200428 13:55:42.895" level="FAIL">Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+<status status="FAIL" endtime="20200428 13:55:42.895" starttime="20200428 13:55:42.894"></status>
+</kw>
+<msg timestamp="20200428 13:55:42.899" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+<msg timestamp="20200428 13:55:42.946" level="FAIL">MaxRetryError: HTTPConnectionPool(host='localhost', port=4755): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000000001B77748&gt;: Failed to establish a new connection: [Errno 10061] No connection could be made because the target machine actively refused it',))</msg>
+<status status="FAIL" endtime="20200428 13:55:42.947" starttime="20200428 13:55:32.848"></status>
+</kw>
+<status status="FAIL" endtime="20200428 13:55:42.948" critical="yes" starttime="20200428 13:55:32.845">MaxRetryError: HTTPConnectionPool(host='localhost', port=4755): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000000001B77748&gt;: Failed to establish a new connection: [Errno 10061] No connection could be made because the target machine actively refused it',))</status>
+</test>
+<test id="s1-t5" name="Read data from excel">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20200428 13:55:42.953" level="INFO">Opening browser 'chrome' to base url 'http://cvm.xerago.net/'.</msg>
+<status status="PASS" endtime="20200428 13:57:05.600" starttime="20200428 13:55:42.951"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20200428 13:57:06.970" starttime="20200428 13:57:05.601"></status>
+</kw>
+<kw name="Open Excel" library="ExcelLibrary">
+<doc>Opens the Excel file from the path provided in the file name parameter.
+If the boolean useTempDir is set to true, depending on the operating system of the computer running the test the file will be opened in the Temp directory if the operating system is Windows or tmp directory if it is not.</doc>
+<arguments>
+<arg>I:/testdata.xls</arg>
+</arguments>
+<status status="PASS" endtime="20200428 13:57:07.527" starttime="20200428 13:57:06.972"></status>
+</kw>
+<kw name="Read Cell Data By Coordinates" library="ExcelLibrary">
+<doc>Uses the column and row to return the data from that cell.</doc>
+<arguments>
+<arg>Sheet1</arg>
+<arg>0</arg>
+<arg>1</arg>
+</arguments>
+<assign>
+<var>${userName}</var>
+</assign>
+<msg timestamp="20200428 13:57:07.542" level="INFO">${userName} = admins</msg>
+<status status="PASS" endtime="20200428 13:57:07.543" starttime="20200428 13:57:07.528"></status>
+</kw>
+<kw name="Read Cell Data By Coordinates" library="ExcelLibrary">
+<doc>Uses the column and row to return the data from that cell.</doc>
+<arguments>
+<arg>Sheet1</arg>
+<arg>1</arg>
+<arg>1</arg>
+</arguments>
+<assign>
+<var>${userPass}</var>
+</assign>
+<msg timestamp="20200428 13:57:07.545" level="INFO">${userPass} = admins@123</msg>
+<status status="PASS" endtime="20200428 13:57:07.545" starttime="20200428 13:57:07.543"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>User Name Is:${userName}</arg>
+</arguments>
+<status status="PASS" endtime="20200428 13:57:07.546" starttime="20200428 13:57:07.545"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>User Pass is:${userPass}</arg>
+</arguments>
+<status status="PASS" endtime="20200428 13:57:07.548" starttime="20200428 13:57:07.547"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>10s</arg>
+</arguments>
+<msg timestamp="20200428 13:57:17.554" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20200428 13:57:17.556" starttime="20200428 13:57:07.549"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:form_username</arg>
+<arg>${userName}</arg>
+</arguments>
+<msg timestamp="20200428 13:57:17.559" level="INFO">Typing text 'admins' into text field 'id:form_username'.</msg>
+<status status="PASS" endtime="20200428 13:57:18.122" starttime="20200428 13:57:17.557"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>id:form_password</arg>
+<arg>${userPass}</arg>
+</arguments>
+<msg timestamp="20200428 13:57:18.124" level="INFO">Typing text 'admins@123' into text field 'id:form_password'.</msg>
+<status status="PASS" endtime="20200428 13:57:18.550" starttime="20200428 13:57:18.123"></status>
+</kw>
+<status status="PASS" endtime="20200428 13:57:18.551" critical="yes" starttime="20200428 13:55:42.949"></status>
+</test>
+<test id="s1-t6" name="Write data to excel">
+<kw name="Open Excel" library="ExcelLibrary">
+<doc>Opens the Excel file from the path provided in the file name parameter.
+If the boolean useTempDir is set to true, depending on the operating system of the computer running the test the file will be opened in the Temp directory if the operating system is Windows or tmp directory if it is not.</doc>
+<arguments>
+<arg>H:/Logi/Robot_Pro/Test_CVM/testdata.xls</arg>
+</arguments>
+<status status="PASS" endtime="20200428 13:57:18.628" starttime="20200428 13:57:18.555"></status>
+</kw>
+<kw name="Put String To Cell" library="ExcelLibrary">
+<doc>Using the sheet name the value of the indicated cell is set to be the string given in the parameter.</doc>
+<arguments>
+<arg>Sample123</arg>
+<arg>0</arg>
+<arg>0</arg>
+<arg>gdgdgxcvv</arg>
+</arguments>
+<status status="PASS" endtime="20200428 13:57:18.634" starttime="20200428 13:57:18.629"></status>
+</kw>
+<kw name="Save Excel" library="ExcelLibrary">
+<doc>Saves the Excel file indicated by file name, the useTempDir can be set to true if the user needs the file saved in the temporary directory.
+If the boolean useTempDir is set to true, depending on the operating system of the computer running the test the file will be saved in the Temp directory if the operating system is Windows or tmp directory if it is not.</doc>
+<arguments>
+<arg>testdata1.xls</arg>
+</arguments>
+<status status="PASS" endtime="20200428 13:57:18.862" starttime="20200428 13:57:18.635"></status>
+</kw>
+<status status="PASS" endtime="20200428 13:57:18.863" critical="yes" starttime="20200428 13:57:18.553"></status>
+</test>
+<status status="FAIL" endtime="20200428 13:57:18.866" starttime="20200428 13:51:28.607"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="4" pass="2">Critical Tests</stat>
+<stat fail="4" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="4" id="s1" name="Test Suit Cato" pass="2">Test Suit Cato</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20200428 13:55:36.873" level="WARN">Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000000000308EDC8&gt;: Failed to establish a new connection: [Errno 10061] No connection could be made because the target machine actively refused it',)': /wd/hub/session</msg>
+<msg timestamp="20200428 13:55:38.875" level="WARN">Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x0000000001B66788&gt;: Failed to establish a new connection: [Errno 10061] No connection could be made because the target machine actively refused it',)': /wd/hub/session</msg>
+<msg timestamp="20200428 13:55:40.883" level="WARN">Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('&lt;urllib3.connection.HTTPConnection object at 0x000000000308E588&gt;: Failed to establish a new connection: [Errno 10061] No connection could be made because the target machine actively refused it',)': /wd/hub/session</msg>
+<msg timestamp="20200428 13:55:42.899" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Multiple keywords with name 'Capture Page Screenshot' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Capture Page Screenshot
+    SeleniumLibrary.Capture Page Screenshot</msg>
+</errors>
+</robot>
