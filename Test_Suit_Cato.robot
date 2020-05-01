@@ -1,14 +1,9 @@
 *** Settings ***
 Library           SeleniumLibrary
-Library           SikuliLibrary    mode=NEW
-Library           DiffLibrary
-Library           AppiumLibrary
-Library           ExcelLibrary
 
 *** Variables ***
 ${LOGIN URL}      http://cvm.xerago.net/
 ${BROWSER}        chrome
-${excel_file}     I:/testdata.xls
 
 *** Test Cases ***
 Valid Credentials Test
