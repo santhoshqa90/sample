@@ -12,10 +12,10 @@ ${excel_file}     I:/testdata.xls
 
 *** Test Cases ***
 Valid Credentials Test
-    ${chrome_options} =     Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
+    ${chrome_options}   Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
     Call Method    ${chrome_options}   add_argument    headless
     Call Method    ${chrome_options}   add_argument    disable-gpu
-    ${options}=     Call Method     ${chrome_options}    to_capabilities
+    ${options}  Call Method     ${chrome_options}    to_capabilities
     Open Browser    ${LOGIN URL}    browser=chrome    remote_url=http://localhost:4444/wd/hub     desired_capabilities=${options}
     Maximize Browser Window
     Wait Until Element Is Enabled    //div[@class='login-footertxt']/p
