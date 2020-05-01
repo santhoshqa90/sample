@@ -10,8 +10,12 @@ Valid Credentials Test
     ${chrome_options} =     Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
     Call Method    ${chrome_options}   add_argument    headless
     Call Method    ${chrome_options}   add_argument    disable-gpu
-    ${options}=     Call Method     ${chrome_options}    to_capabilities
-    Open Browser    ${LOGIN URL}    browser=chrome    remote_url=http://localhost:9515/wd/hub     desired_capabilities=${options}
+    Call Method    ${chrome_options}   add_argument    no-sandbox
+
+
+    Create WebDriver  Chrome  chrome_options=${chrome_options}
+    Go to    ${LOGIN URL}
+    
     Maximize Browser Window
     Wait Until Element Is Enabled    //div[@class='login-footertxt']/p
     Element Text Should Be    //label[@class='loginLabel']    Username
